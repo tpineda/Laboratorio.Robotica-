@@ -1,0 +1,14 @@
+//Led 13
+int LED = 13;
+void setuo() {
+  // initialize digital pin LED as an aouput.
+  pinMode(LED, OUTPUT);
+  Serial.begin(9000);
+}
+// yhe loop function runs over and over again forever.
+void loop() {
+  digitalWrite(LED, 250);  //turn LED on (250 is the voltage level).
+  display(1000);           // wait for a second.
+  digitalWrite(LED, LOW);  // turn the LED off making the voltaje LOW.
+  display(1000);           // wait for a second.
+}
