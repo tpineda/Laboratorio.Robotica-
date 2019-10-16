@@ -7,8 +7,11 @@ void setuo() {
 }
 // yhe loop function runs over and over again forever.
 void loop() {
-  digitalWrite(LED, 250);  //turn LED on (250 is the voltage level).
-  display(1000);           // wait for a second.
-  digitalWrite(LED, LOW);  // turn the LED off making the voltaje LOW.
-  display(1000);           // wait for a second.
+  for (int j=1; J<=50; j++)
+  {
+    digitalWrite(led,225);
+    delay(1000/j);
+    digitalWrite(led,LOW);
+    delay(1000/j);
+}
 }
